@@ -1,0 +1,305 @@
+/*Global*/
+:root{
+    --blue :#88c8ff ;
+    --black : #151019; 
+}
+html {
+    scroll-behavior: smooth;
+}
+.title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 25px;
+    text-transform: capitalize;
+}
+.btn-blue{
+    background: #88C8FF;
+    border-radius: 30px;
+    font-weight: 600;
+}
+.anchor{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 10px;
+}
+.anchor path:hover{
+    fill: var(--blue);
+}
+.overlay{
+    background-color: rgba(0, 0,0, 0.3);
+}
+/*Strat header*/
+/*BACKGORUND */
+header{
+    background-color: var(--black);
+}
+header .background {
+    position:  absolute;
+    display:  block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+header .navbar span{
+    color : var(--blue)
+}
+header .navbar a{
+position: static;
+width: 100px;
+height: 43px;
+left: 0px;
+top: 0px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+transition: all 300ms ease-in;
+}
+header .navbar a:hover{
+    color : var(--blue)
+}
+header .navbar .fas{
+    color:white;
+}
+  /* I am web developer */
+header .description{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+header .description .desc {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+header .description .btn{
+    background-color: transparent;
+    border-radius: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-top: 30px;
+}
+header .bg-black{
+    background-color:var(--black);
+}
+/*about */
+.about {
+    background-color: var(--black);
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about .row{
+    padding-top: 50px ;
+}
+.about .about-me{
+    margin-top: 50px;
+}
+.about .about-me .h3{
+font-family: Roboto;
+font-style: normal;
+line-height: 28px;
+text-transform: capitalize;
+padding-top: 50px;
+}
+
+.about .about-me  p{
+/*font-family: Roboto;*/
+font-style: normal;
+font-weight: normal;
+line-height: 35px;
+/* or 146% */
+display: flex;
+align-items: center;
+text-transform: capitalize;
+padding-bottom: 50px;
+}
+/*client*/
+.client{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.client .card {
+    padding-top:  30px ;
+    padding-bottom:  30px ;
+    border:none;
+    background-color: transparent;
+    color:white !important;
+}
+.client svg{
+    margin-bottom: 10px;
+}
+/*What I do */
+
+.what-i-do{
+    color: white;
+    background-color: var(--black);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.what-i-do .col-md-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.what-i-do .card{
+    margin-top: 25px;
+    background-color: transparent;
+    border-color: white;
+    width: 300px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.what-i-do h4{
+    font-family: Roboto;
+    font-style: normal;
+    text-transform: capitalize;
+}
+.what-i-do .card svg{
+    margin-bottom: 15px;
+}
+.what-i-do .card path:hover{
+    fill: var(--blue);
+}
+/*let's do it section*/
+.lets {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+.lets .overlay{
+    padding-top:  50px ;
+    padding-bottom:  50px ;
+}
+.lets .card-inside{
+    width: 100%;
+    padding: 40px 20px ;
+    background-color: var(--black);
+    border-radius: 5px;
+}
+.lets .card-inside .h1{
+    color : white;
+    font-family: Roboto;
+    font-style: normal;
+    text-transform: capitalize;
+}
+/*Project Section*/
+.project {
+    color: white;
+    background-color: var(--black);
+    padding-top:  50px ;
+    padding-bottom:  50px ;
+}
+.project .project-photo{
+    cursor: pointer;
+    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+}
+.project .search-photo{
+    visibility: hidden;
+    cursor: pointer;
+    min-height: 450px;
+    background-color: rgba(136, 200, 255,0.5);
+    align-items: center;
+    transition: all 300ms ease-out;
+}
+/*section*/
+.section{
+    background-attachment: fixed;
+    color : white;
+    font-family: Roboto;
+    font-style: normal;
+    text-transform: capitalize;
+}
+/* contact us*/
+.contact{
+    color:white;
+    padding: 50px 0px 50px 0px;
+    background-color: var(--black);
+}
+.contact .form{
+    padding-top: 45px;
+}
+.contact .form-control{
+    height: 45px;
+    background:transparent;
+    border-color: var(--blue);
+    color:white;
+}
+.contact ::placeholder{
+    color: white;
+    font-weight: 500;
+}
+.contact ::-moz-placeholder{
+    color: white;
+    font-weight: 500;
+}
+.contact textarea{
+    height: 220px !important;
+}
+/*footer*/
+.footer{
+    background-color: var(--black);
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color:white;
+    font-weight: 400;
+}
+.footer .soceal-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer hr{
+    background-color: white;
+}
+
+
+
+@media (max-width: 768px) { 
+    .black{
+        background-color:var(--black);
+    }
+
+}
+
+@media (min-width: 768px) { 
+    .about .img-fluid{
+        width: 80%;
+    }
+
+}
+
+
+
+
+
